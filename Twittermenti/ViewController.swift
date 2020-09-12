@@ -10,5 +10,8 @@ import UIKit
 import SwifteriOS
 
 class ViewController: UIViewController {
-    
+    //MARK:- IBOutlets|IBAction
+    @IBOutlet weak var sentimentLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    @IBAction func predictButtonPressed(_ sender: UIButton) {}
 }
