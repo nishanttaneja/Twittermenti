@@ -7,7 +7,7 @@ This application fetches latest tweets regarding the provided search string as a
 
 ## Technologies
 
-## DIY
+## Build It Yourself
 - <a href=""> Download Training Data </a>
 - Create TweetSentimentClassifier MLModel
 
@@ -22,5 +22,13 @@ This application fetches latest tweets regarding the provided search string as a
 - Move MLModel to project's root directory and add reference (drag and drop MLModel to project).
 - <a href=""> Download Swifter Project </a>. Add to project using 'drag & drop' or 'Add files to "Twittermenti"...'.
 - Add SwifteriOS Framework in project.
+- Sign up as a <a href="https://developer.twitter.com/en/portal/dashboard"> Twitter Developer </a> account if you haven't already.
+- Create an app on Twitter Developer Portal and get API Key & Secret.
+- Create a new Swift file including structure named "PrivateData" with static constants for API Key & Secret.
 
-
+        struct PrivateData {
+            static let apiKey: String = "api_key"
+            static let apkiKeySecret: String = "api_key_secret"
+        }
+        
+- 

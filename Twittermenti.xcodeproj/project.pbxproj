@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4D0B37A250D5C7800E8AF74 /* PrivateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0B379250D5C7800E8AF74 /* PrivateData.swift */; };
 		B4F31D2A250D54AB002C9D8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F31D29250D54AB002C9D8F /* AppDelegate.swift */; };
 		B4F31D2C250D54AB002C9D8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F31D2B250D54AB002C9D8F /* SceneDelegate.swift */; };
 		B4F31D2E250D54AB002C9D8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F31D2D250D54AB002C9D8F /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B4D0B379250D5C7800E8AF74 /* PrivateData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateData.swift; sourceTree = "<group>"; };
 		B4F31D26250D54AB002C9D8F /* Twittermenti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twittermenti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F31D29250D54AB002C9D8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F31D2B250D54AB002C9D8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B4F31D2F250D54AB002C9D8F /* Main.storyboard */,
 				B4F31D32250D54AE002C9D8F /* Assets.xcassets */,
 				B4F31D34250D54AE002C9D8F /* LaunchScreen.storyboard */,
+				B4D0B379250D5C7800E8AF74 /* PrivateData.swift */,
 				B4F31D3E250D57B2002C9D8F /* TweetSentimentClassifier.mlmodel */,
 				B4F31D37250D54AE002C9D8F /* Info.plist */,
 			);
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D0B37A250D5C7800E8AF74 /* PrivateData.swift in Sources */,
 				B4F31D2E250D54AB002C9D8F /* ViewController.swift in Sources */,
 				B4F31D2A250D54AB002C9D8F /* AppDelegate.swift in Sources */,
 				B4F31D3F250D57B2002C9D8F /* TweetSentimentClassifier.mlmodel in Sources */,
@@ -413,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4YZDJM5F99;
+				DEVELOPMENT_TEAM = 658S3P2LKT;
 				INFOPLIST_FILE = Twittermenti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4YZDJM5F99;
+				DEVELOPMENT_TEAM = 658S3P2LKT;
 				INFOPLIST_FILE = Twittermenti/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
