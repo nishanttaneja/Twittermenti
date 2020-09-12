@@ -4,11 +4,12 @@ An iOS Application to analyse sentiment of tweets.
 This application fetches latest tweets regarding the provided search string as a Hashtag or Username, then analyses sentiment of tweets and displays the overall sentiment.
 
 ## Screenshots
+<img src="result.png" width="250">
 
 ## Technologies
 - Swift Programming Language
 - Storyboard
-- UIKit - UIViewController | UILabel | UITextField | UIButton
+- UIKit - UIViewController | UILabel | UITextField | UITextFieldDelegate | UIButton
 - Cocoa - URL
 - CreateML - MLTextClassifier | MLModelMetadata
 - SwifteriOS
