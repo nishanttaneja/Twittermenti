@@ -6,6 +6,9 @@ This application fetches latest tweets regarding the provided search string as a
 ## Screenshots
 
 ## Technologies
+- Swift Programming Language
+- Storyboard
+- UIKit - UIViewController | UILabel | UITextField | UIButton
 - Cocoa - URL
 - CreateML - MLTextClassifier | MLModelMetadata
 - SwifteriOS
