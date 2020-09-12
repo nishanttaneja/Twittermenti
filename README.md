@@ -3,6 +3,8 @@ An iOS Application to analyse sentiment of tweets.
 
 This application fetches latest tweets regarding the provided search string as a Hashtag or Username, then analyses sentiment of tweets and displays the overall sentiment.
 
+<br>This application is part of <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/">iOS Application Bootcamp</a> course by Dr. Angela Yu, <a href="https://www.appbrewery.co">TheAppBrewery</a>.
+
 ## Screenshots
 <img src="result.png" width="250">
 
