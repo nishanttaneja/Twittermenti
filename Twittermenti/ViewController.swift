@@ -10,17 +10,22 @@ import UIKit
 import SwifteriOS
 
 class ViewController: UIViewController {
-    //MARK:- IBOutlets
+    //MARK:- IBOutlets|IBAction
     @IBOutlet weak var sentimentLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
-    
+    @IBAction func predictButtonPressed(_ sender: UIButton) {fetchTweets()}
     //MARK:- Initialise
     let sentimentClassifier = TweetSentimentClassifier()
     let swifter = Swifter(consumerKey: PrivateData.apiKey, consumerSecret: PrivateData.apkiKeySecret)
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        textField.delegate = self
+    }
+    
     //MARK:- Fetch Tweets
-    /// This method is called when Predict button is pressed. This method fetches 100 latest tweets about the provided search string.
-    @IBAction func predictButtonPressed(_ sender: UIButton) {
+    /// This method fetches 100 latest tweets about the provided search string.
+    fileprivate func fetchTweets() {
         if let searchText = textField.text {
             swifter.searchTweet(using: searchText, lang: "en", count: 100, tweetMode: .extended, success: { (results, metadata) in
                 var tweets = [TweetSentimentClassifierInput]()
@@ -36,6 +41,7 @@ class ViewController: UIViewController {
             }
         }
     }
+    
     //MARK:- Predict Sentiments
     /// This method predicts the sentiments of fetched tweets.
     private func predict(_ tweets: [TweetSentimentClassifierInput]) {
@@ -60,5 +66,13 @@ class ViewController: UIViewController {
         else if score > -10 {sentimentLabel.text = "😕"}
         else if score > -20 {sentimentLabel.text = "😡"}
         else {sentimentLabel.text = "🤮"}
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        fetchTweets()
+        textField.resignFirstResponder()
+        return true
     }
 }
