@@ -6,6 +6,9 @@ This application fetches latest tweets regarding the provided search string as a
 ## Screenshots
 
 ## Technologies
+- Cocoa - URL
+- CreateML - MLTextClassifier | MLModelMetadata
+- SwifteriOS
 
 ## Build It Yourself
 - <a href=""> Download Training Data </a>
@@ -24,6 +27,7 @@ This application fetches latest tweets regarding the provided search string as a
 - Add SwifteriOS Framework in project.
 - Sign up as a <a href="https://developer.twitter.com/en/portal/dashboard"> Twitter Developer </a> account if you haven't already.
 - Create an app on Twitter Developer Portal and get API Key & Secret.
+- Remove reference of PrivateData.swift (simply delete the file).
 - Create a new Swift file including structure named "PrivateData" with static constants for API Key & Secret.
 
         struct PrivateData {
@@ -31,4 +35,4 @@ This application fetches latest tweets regarding the provided search string as a
             static let apkiKeySecret: String = "api_key_secret"
         }
         
-- 
+- Use Swifter|Apple Documentation for further assistance.
