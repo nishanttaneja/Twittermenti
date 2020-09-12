@@ -20,4 +20,7 @@ This application fetches latest tweets regarding the provided search string as a
             try sentimentClassifier.write(toFile: "<path_to_save_mlmodel>")
 
 - Move MLModel to project's root directory and add reference (drag and drop MLModel to project).
-- 
+- <a href=""> Download Swifter Project </a>. Add to project using 'drag & drop' or 'Add files to "Twittermenti"...'.
+- Add SwifteriOS Framework in project.
+
+
